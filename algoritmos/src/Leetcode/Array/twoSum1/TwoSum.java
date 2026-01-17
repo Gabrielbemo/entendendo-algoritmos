@@ -1,4 +1,4 @@
-package leetcode.array.twoSum1;
+package Leetcode.Array.twoSum1;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class TwoSum {
     public static void main(String[] args) {
-        int[] sample = {1,4,7,3,9,22,64,23,12};
+        int[] sample = {1, 4, 7, 3, 9, 22, 64, 23, 12};
 
         System.out.println(Arrays.toString(twoSumFirtImpleention(sample, 16)));
 
@@ -32,7 +32,7 @@ public class TwoSum {
             int difference = target - sample[i];
 
             if (map.containsKey(difference)) {
-                return new int[] { map.get(difference), i };
+                return new int[]{map.get(difference), i};
             }
 
             map.put(sample[i], i);

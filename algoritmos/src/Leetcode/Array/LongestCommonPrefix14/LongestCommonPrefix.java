@@ -1,10 +1,11 @@
-package leetcode.array.LongestCommonPrefix14;
+package Leetcode.Array.LongestCommonPrefix14;
 
 public class LongestCommonPrefix {
     public static void main(String[] args) {
         String[] sample = {"adasdas", "adasds", "adwqeqwe"};
         System.out.println(longestCommonPrefix(sample));
     }
+
     public static String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0) return "";
 
