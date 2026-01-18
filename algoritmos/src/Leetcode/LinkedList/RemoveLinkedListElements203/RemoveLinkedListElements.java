@@ -1,6 +1,6 @@
-package Leetcode.linkedList.RemoveLinkedListElements203;
+package Leetcode.LinkedList.RemoveLinkedListElements203;
 
-import Leetcode.linkedList.Util.ListNode;
+import Leetcode.Util.ListNode;
 
 public class RemoveLinkedListElements {
     static void main(String[] args) {

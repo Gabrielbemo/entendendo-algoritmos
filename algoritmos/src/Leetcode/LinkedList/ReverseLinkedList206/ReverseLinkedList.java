@@ -1,6 +1,6 @@
-package Leetcode.linkedList.ReverseLinkedList206;
+package Leetcode.LinkedList.ReverseLinkedList206;
 
-import Leetcode.linkedList.Util.ListNode;
+import Leetcode.Util.ListNode;
 
 public class ReverseLinkedList {
     static void main(String[] args) {

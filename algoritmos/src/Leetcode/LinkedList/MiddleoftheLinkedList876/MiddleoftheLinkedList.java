@@ -1,6 +1,6 @@
-package Leetcode.linkedList.MiddleoftheLinkedList876;
+package Leetcode.LinkedList.MiddleoftheLinkedList876;
 
-import Leetcode.linkedList.Util.ListNode;
+import Leetcode.Util.ListNode;
 
 public class MiddleoftheLinkedList {
 

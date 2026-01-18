@@ -1,6 +1,6 @@
-package Leetcode.linkedList.LinkedListCycle141;
+package Leetcode.LinkedList.LinkedListCycle141;
 
-import Leetcode.linkedList.Util.ListNode;
+import Leetcode.Util.ListNode;
 
 public class LinkedListCycle {
     static void main(String[] args) {

@@ -1,6 +1,6 @@
-package Leetcode.linkedList.RemoveDuplicatesFromSortedList83;
+package Leetcode.LinkedList.RemoveDuplicatesFromSortedList83;
 
-import Leetcode.linkedList.Util.ListNode;
+import Leetcode.Util.ListNode;
 
 public class RemoveDuplicatesFromSortedList {
 
