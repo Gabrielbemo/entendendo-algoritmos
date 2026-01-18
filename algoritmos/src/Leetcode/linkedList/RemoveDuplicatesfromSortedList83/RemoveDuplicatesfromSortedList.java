@@ -1,7 +1,6 @@
-package Leetcode.linkedList.MergeTwoSortedLists21;
+package Leetcode.linkedList.RemoveDuplicatesfromSortedList83;
 
-public class MergeTwoSortedLists {
-
+public class RemoveDuplicatesfromSortedList {
     public static class ListNode {
         int val;
         ListNode next;
@@ -19,37 +18,30 @@ public class MergeTwoSortedLists {
         }
     }
 
-    public static void main(String[] args) {
-        ListNode list1 = createListNode(new int[]{1, 2, 4});
-
-        ListNode list2 = createListNode(new int[]{1, 3, 4});
-
-        ListNode mergedResult = mergeTwoLists(list1, list2);
-
-        System.out.print("Resultado do merge: ");
-        printList(mergedResult);
+    static void main(String[] args) {
+        ListNode list1 = createListNode(new int[]{1, 1, 2, 3, 3});
+        printList(list1);
+        System.out.println();
+        printList(deleteDuplicates(list1));
     }
 
-    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode startNode = new ListNode(0);
-        ListNode lastNode = startNode;
-
-        while (list1 != null && list2 != null) {
-
-            if (list1.val <= list2.val) {
-                lastNode.next = list1;
-                list1 = list1.next;
-            } else {
-                lastNode.next = list2;
-                list2 = list2.next;
-            }
-
-            lastNode = lastNode.next;
+    public static ListNode deleteDuplicates(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
         }
 
-        lastNode.next = (list1 != null) ? list1 : list2;
-
-        return startNode.next;
+        ListNode startNewNode = head;
+        ListNode movingNode = startNewNode.next;
+        while (movingNode != null) {
+            if (movingNode.val != startNewNode.val) {
+                startNewNode.next = movingNode;
+                startNewNode = movingNode;
+            } else if (movingNode.next == null) {
+                startNewNode.next = movingNode.next;
+            }
+            movingNode = movingNode.next;
+        }
+        return head;
     }
 
     public static void printList(ListNode node) {
