@@ -1,33 +1,18 @@
 package Leetcode.linkedList.MergeTwoSortedLists21;
 
+import Leetcode.linkedList.Util.ListNode;
+
 public class MergeTwoSortedLists {
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
     public static void main(String[] args) {
-        ListNode list1 = createListNode(new int[]{1, 2, 4});
+        ListNode list1 = ListNode.createListNode(new int[]{1, 2, 4});
 
-        ListNode list2 = createListNode(new int[]{1, 3, 4});
+        ListNode list2 = ListNode.createListNode(new int[]{1, 3, 4});
 
         ListNode mergedResult = mergeTwoLists(list1, list2);
 
         System.out.print("Resultado do merge: ");
-        printList(mergedResult);
+        ListNode.printList(mergedResult);
     }
 
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
@@ -50,30 +35,5 @@ public class MergeTwoSortedLists {
         lastNode.next = (list1 != null) ? list1 : list2;
 
         return startNode.next;
-    }
-
-    public static void printList(ListNode node) {
-        ListNode currentNode = node;
-
-        while (currentNode != null) {
-            System.out.print(currentNode.val + " ");
-            currentNode = currentNode.next;
-        }
-    }
-
-    public static ListNode createListNode(int[] input) {
-        if (input == null || input.length == 0) {
-            return null;
-        }
-
-        ListNode head = new ListNode(input[0]);
-        ListNode current = head;
-
-        for (int i = 1; i < input.length; i++) {
-            current.next = new ListNode(input[i]);
-            current = current.next;
-        }
-
-        return head;
     }
 }
