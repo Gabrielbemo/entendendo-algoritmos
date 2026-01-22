@@ -1,7 +1,7 @@
-package Leetcode.Recursion.PowerofTwo231;
+package Leetcode.Recursion.PowerOfTwo231;
 
-public class PowerofTwo {
-    static void main(String[] args) {
+public class PowerOfTwo {
+    public static void main(String[] args) {
         System.out.println(isPowerOfTwoFirst(8));
         System.out.println(isPowerOfTwoOptimized(8));
     }
@@ -20,5 +20,4 @@ public class PowerofTwo {
         if (n <= 0) return false;
         return (n & (n - 1)) == 0;
     }
-
 }
