@@ -6,8 +6,10 @@ https://leetcode.com/problems/power-of-two?envType=problem-list-v2&envId=recursi
 |-----------------------|-----------------------|------------------------|
 | isPowerOfTwoFirst     | O(log n)              | O(1)                   |
 | isPowerOfTwoOptimized | O(1)                  | O(1)                   |
+| isPowerOfTwoRecursive | O(log n)              | O(log n)                   |
 
 Coding Pattern utilizado:
 
 isPowerOfTwoFirst - Math / Loop-Based
 isPowerOfTwoOptimized - Bit Manipulation
+isPowerOfTwoRecursive - Recursion / Divide and Conquer
