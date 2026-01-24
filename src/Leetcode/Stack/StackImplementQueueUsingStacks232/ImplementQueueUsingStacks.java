@@ -16,7 +16,6 @@ public class ImplementQueueUsingStacks {
     }
 
     static class MyQueue {
-
         private Deque<Integer> inputStack = new ArrayDeque<>();
         private Deque<Integer> outputStack = new ArrayDeque<>();
 
