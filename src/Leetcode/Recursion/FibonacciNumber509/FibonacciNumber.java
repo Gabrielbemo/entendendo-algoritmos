@@ -3,6 +3,7 @@ package Leetcode.Recursion.FibonacciNumber509;
 public class FibonacciNumber {
     static void main(String[] args) {
         System.out.println(fib(8));
+        System.out.println(fibRecursive(8));
     }
 
     public static int fib(int n) {
@@ -19,5 +20,11 @@ public class FibonacciNumber {
 
         return currentValue;
     }
+
+    public static int fibRecursive(int n) {
+        if (n <= 1) return n;
+        return fib(n - 1) + fib(n - 2);
+    }
+
 
 }
